@@ -81,5 +81,4 @@ test:
 production:
   <<: *default
   database: code_game_production
-  username: code_game
   password: <%= ENV['CODE_GAME_DATABASE_PASSWORD'] %>
