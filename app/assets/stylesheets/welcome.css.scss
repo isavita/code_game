@@ -1,16 +1,10 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-.mastfoot, .cover-container {
-  width: 500px;
-  color: #999;
-}
-
 .cover {
   padding: 0 20px;
 }
 
 .mastfoot {
-  position: fixed;
-  bottom: 0;
+  color: #999;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
