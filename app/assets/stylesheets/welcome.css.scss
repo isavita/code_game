@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .mastfoot, .cover-container {
   width: 500px;
+  color: #999;
 }
 
 .cover {
@@ -12,10 +13,4 @@
 .mastfoot {
   position: fixed;
   bottom: 0;
-}
-
-.cover {
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
 }
