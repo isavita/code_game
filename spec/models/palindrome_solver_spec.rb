@@ -1,10 +1,10 @@
-require 'spec_helper'
+require 'rails_helper'
+require 'palindrome_solver.rb'
 
 describe PalindromeSolver do
 
   it "is palindrome" do
-    solver = PalindromeSolver.new
-    solver.palindrome?("rotor").should be_true
+    expect(PalindromeSolver.palindrome?("rotor")).to be_true
   end
 
   it "is not palindrome" do
