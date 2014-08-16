@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'levels/one'
+
+  get 'levels/two'
+
   devise_for :users
   get 'welcome/index'
   get 'welcome/about'

@@ -1,0 +1,23 @@
+<h1>Level One</h1>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Find the names of Code Planet generals</h3>
+  </div>
+  <div class="panel-body">
+    All generals in Code Planet army have palindromes first names. Here’s the text of the last message from there headquarters:
+    <div  id="task-description"><p>Text</p></div>
+  </div>
+</div>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Enter an array with generals names here:</h3>
+  </div>
+  <div class="panel-body">
+    <div class="col-12">
+      <%= form_tag(levels_two_path, method: 'GET') do %>
+        <%= text_area_tag('solution-input') %>
+        <%= submit_tag('Submit', class: 'btn btn-success btn-lg pull-right') %>
+      <% end %>
+    </div>
+  </div>
+</div>

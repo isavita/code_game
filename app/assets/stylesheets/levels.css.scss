@@ -1,0 +1,23 @@
+// Place all the styles related to the levels controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.panel-body, #solution-input {
+  color: black;
+}
+
+#task-description {
+  border: 1px solid #428bca;
+  margin: 10px 5px;
+}
+
+textarea {
+    border: 1px solid #999999;
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+#solution-input {
+    padding-right: 1px;
+    color: brown;
+}
