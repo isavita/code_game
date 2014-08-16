@@ -14,9 +14,9 @@
   </div>
   <div class="panel-body">
     <div class="col-12">
-      <%= form_tag(levels_two_path, method: 'GET') do %>
-        <%= text_area_tag('solution-input') %>
-        <%= submit_tag('Submit', class: 'btn btn-success btn-lg pull-right') %>
+      <%= form_for :solution do |f| %>
+      <%= f.text_area :text %>
+      <%= f.submit 'Submit', class: 'btn btn-success btn-lg pull-right' %>
       <% end %>
     </div>
   </div>

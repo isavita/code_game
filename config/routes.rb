@@ -1,15 +1,15 @@
 Rails.application.routes.draw do
   get 'levels/one'
-
   get 'levels/two'
+
+  resources :solutions
+  match "/levels/one" => "solutions#create", :via => :post, :as => :create_forum
 
   devise_for :users
   get 'welcome/index'
   get 'welcome/about'
-  get 'welcome/login'
-  get 'welcome/signup'
 
-  root :to => 'welcome#index'
+  root to: 'welcome#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
