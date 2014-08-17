@@ -1,11 +1,15 @@
 module SolutionsHelper  
-  def solution?(solution)
+  def solution_of_level_one?(solution)
     return false if solution.nil? || solution.empty?
 
     solution_words = convert_to_array(solution)
-    text = Task.first[:content]
+    text = Task.find(1)[:content]
     words = Modules::Palindrome.find_all_palindrome_words(text)    
+
     return words.sort == solution_words.sort
+  end
+
+  def solution_of_level_two?(solution)
   end
 
   private
