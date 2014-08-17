@@ -8,7 +8,7 @@ class SolutionsController < ApplicationController
 
     @solution = Solution.new(solution_params)
     if @solution.save
-       render 'levels/two'
+       render plain: (solution? params[:solution][:text]) #'levels/two'  
     else      
       redirect_to levels_one_path
     end
@@ -17,14 +17,14 @@ class SolutionsController < ApplicationController
   private
   def solution_params
     solution = {
-      email: current_user[:email] || 'none',
+      email: current_user[:email] || 'none', # TODO: raise error in this case
       level: 1,
       completed: true
     }
   end
 
   def solution?(text)
-    # to add function from the static class
-    false
+    # TODO add function from the static class
+    Modules::Palindrome.palindrome? text
   end
 end

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'levels/two'
 
   resources :solutions
+  
   match "/levels/one" => "solutions#create", :via => :post, :as => :create_forum
 
   devise_for :users
