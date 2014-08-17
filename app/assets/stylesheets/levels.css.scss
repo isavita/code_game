@@ -5,9 +5,27 @@
   color: black;
 }
 
-#task-content, #task-description {
+.panel {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #00aeef;
+}
+
+.task-description {
+  font-size: 1.20em;
+  color: white; 
+}
+
+.task-content {
+  color: brown;
   border: 1px solid #428bca;
   margin: 10px 5px;
+  border-radius: 5px;
+}
+
+.congratulations {
+  font-size: 1.5em;
+  color: orange;
+  text-shadow: 1px 1px #ff0000;
 }
 
 textarea {
